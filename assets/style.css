@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #bb4949;
+}
+
+.container {
+    width: 40%;
+    margin: 0 auto;
+}
+
+header {
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fdfdfe;
+    border-bottom: 1px solid #af3d3d;
+}
+
+header h4 i {
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.buttons button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    font-size: 11px;
+    background-color: #c06a6d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background-color: #cb5d61;
+}
+
+button a {
+    color: #fdfdfe;
+}
+
+button i {
+    margin-right: 5px;
+    font-size: 12px;
+    color: #fdfdfe;
+}
+
+.box {
+    width: 350px;
+    height: 250px;
+    margin: 15% auto;
+    display: flex;
+    justify-content: center;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 5px;
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(0.9px);
+    -webkit-backdrop-filter: blur(0.9px);
+}
+
+.box .choice {
+    margin: 3%;
+    font-size: 13px;
+    height: 20px;
+    padding-top: 3px;
+    width: 90px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fdfdfe;
+    position: relative;
+
+}
+
+.box .choice:first-child {
+    font-weight: 500;
+    background-color: #ac5151;
+}
+
+.box .btns {
+    position: absolute;
+    bottom: 5%;
+
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.btns button {
+    padding: 3px 10px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.btns button a {
+    color: #ac6167;
+    background-color: #ffffff;
+    font-weight: 500;
+    font-size: 15px;
+}
