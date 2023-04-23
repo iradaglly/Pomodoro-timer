@@ -62,12 +62,13 @@ button i {
     margin: 15% auto;
     display: flex;
     justify-content: center;
+    position: relative;
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.22);
     border-radius: 5px;
-    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     backdrop-filter: blur(0.9px);
     -webkit-backdrop-filter: blur(0.9px);
+
 }
 
 .box .choice {
@@ -91,7 +92,6 @@ button i {
 .box .btns {
     position: absolute;
     bottom: 5%;
-
     left: 50%;
     transform: translate(-50%);
 }
@@ -108,4 +108,33 @@ button i {
     background-color: #ffffff;
     font-weight: 500;
     font-size: 15px;
+}
+
+.box h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    color: #ffffff;
+}
+
+.clock {
+    width: 120px;
+    height: 60px;
+    margin: 3% auto;
+    color: white;
+    text-align: center;
+    line-height: 27px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 8px;
+    backdrop-filter: blur(2.1px);
+    -webkit-backdrop-filter: blur(2.1px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+#liveclck {
+    font-weight: 400;
 }
