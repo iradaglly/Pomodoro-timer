@@ -59,7 +59,9 @@ button i {
 .box {
     width: 350px;
     height: 250px;
-    margin: 15% auto;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 7%;
     display: flex;
     justify-content: center;
     position: relative;
@@ -137,4 +139,56 @@ button i {
 
 #liveclck {
     font-weight: 400;
+}
+
+.todo {
+    text-align: center;
+    color: #ffffff;
+    line-height: 30px;
+}
+
+.todo h4 {
+    border-bottom: 1px solid white;
+    text-align: left;
+}
+
+.todo #input {
+    width: 350px;
+    height: 35px;
+    margin-top: 3%;
+    border: none;
+    border-radius: 10px;
+}
+
+.todo #add,#clear{
+    width: 350px;
+    background-color: #ab4343;
+    border: 1px dashed #e3bcbc;
+    height: 30px;
+    margin-top: 3%;
+    color: #fdfdfe;
+    font-size: 16px;
+}
+
+.todo #add i {
+    margin-right: 5px;
+    font-size: 16px;
+}
+.todo #clear i {
+    margin-right: 5px;
+    font-size: 16px;
+}
+ul li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+ul li button {
+    margin-left: 5px;
+    border: none;
+    background-color: #bb4949;
+    width: 30px;
+    height: 30px;
+    text-align: center;
 }
