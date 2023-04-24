@@ -1,9 +1,45 @@
 let startBtn = document.querySelector("#start")
+let stopBtn = document.querySelector("#stop")
+let resetBtn = document.querySelector("#reset")
 let list = document.querySelector("ul")
 let input = document.querySelector("#input")
 let addBtn = document.querySelector("#add")
 let clearBtn = document.querySelector("#clear")
 
+let intervalId = undefined;
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    intervalId = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+startBtn.onclick = function () {
+    let twenntyfiveMin = 60 * 25;
+    display = document.querySelector("#pomodoro");
+    startTimer(twenntyfiveMin, display);
+};
+resetBtn.onclick = function () {
+    clearInterval(intervalId);
+    var twenntyfiveMin = 60 * 25,
+        display = document.querySelector("#pomodoro");
+    startTimer(twenntyfiveMin, display);
+}
+stopBtn.onclick = function () {
+    clearInterval(intervalId);
+
+}
+//-------------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
     getTime();
 })
@@ -56,3 +92,6 @@ addBtn.addEventListener("click", (e) => {
         })
     }
 })
+
+
+

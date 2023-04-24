@@ -103,21 +103,20 @@ button i {
     background-color: #ffffff;
     border: 1px solid #ffffff;
     border-radius: 5px;
-}
-
-.btns button a {
     color: #ac6167;
     background-color: #ffffff;
     font-weight: 500;
     font-size: 15px;
 }
 
-.box h1 {
+
+
+#pomodoro {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 4em;
+    font-size: 3em;
     color: #ffffff;
 }
 
@@ -160,7 +159,8 @@ button i {
     border-radius: 10px;
 }
 
-.todo #add,#clear{
+.todo #add,
+#clear {
     width: 350px;
     background-color: #ab4343;
     border: 1px dashed #e3bcbc;
@@ -174,14 +174,17 @@ button i {
     margin-right: 5px;
     font-size: 16px;
 }
+
 .todo #clear i {
     margin-right: 5px;
     font-size: 16px;
 }
+
 ul li {
     display: flex;
     justify-content: center;
     text-align: center;
+
 }
 
 ul li button {
@@ -191,4 +194,5 @@ ul li button {
     width: 30px;
     height: 30px;
     text-align: center;
+    height: 30px;
 }
